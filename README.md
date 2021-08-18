@@ -1,6 +1,8 @@
-# Profil Juang
+# Profil Juang & Jasa Ongkir
 
-Tugas Ketiga YLABS Indonesia Mobile Developer Bootcamp: State Management dan Routing
+Tugas Keempat YLABS Indonesia Mobile Developer Bootcamp: Membuat API
 
-![](https://github.com/YLab-Mobile-Dev-Bootcamp/karuniaperjuangan-task2danseterusnya/blob/main/SS2.jpg)
-![](https://github.com/YLab-Mobile-Dev-Bootcamp/karuniaperjuangan-task2danseterusnya/blob/main/SS3.jpg)
+Di sini saya menggunakan API https://rajaongkir.com/dokumentasi untuk menghitung jasa ongkir JNE, POS Kilat dan Tiki
+
+![](https://github.com/YLab-Mobile-Dev-Bootcamp/karuniaperjuangan-task2danseterusnya/blob/main/Tugas4A.jpg)
+![](https://github.com/YLab-Mobile-Dev-Bootcamp/karuniaperjuangan-task2danseterusnya/blob/main/Tugas4B.jpg)
