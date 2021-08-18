@@ -26,7 +26,7 @@ class _OngkirPageState extends State<OngkirPage> {
     getData();
     return Scaffold(
       body: Container(
-        padding: EdgeInsets.all(20),
+        padding: EdgeInsets.all(40),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -42,8 +42,9 @@ class _OngkirPageState extends State<OngkirPage> {
                   border: OutlineInputBorder(),
                   labelText: "Asal Kota"
                 ),
-                onChanged: (String value){_asalKotaController.text = value;},
+                onChanged: (String value){ setState(() {_asalKotaController.value = TextEditingValue(text: value);}); },
               ),
+              onSelected: (String value){ setState(() {_asalKotaController.value = TextEditingValue(text: value);}); },
               ),
               SizedBox(height: 24,),
               Autocomplete<String>(
@@ -57,8 +58,9 @@ class _OngkirPageState extends State<OngkirPage> {
                   border: OutlineInputBorder(),
                   labelText: "Kota Tujuan"
                 ),
-                onChanged: (String value){_tujuanController.text = value;},
+                onChanged: (String value){ setState(() {_tujuanController.value = TextEditingValue(text: value);}); },
               ),
+              onSelected: (String value){ setState(() {_tujuanController.value = TextEditingValue(text: value);}); },
               ),
               SizedBox(height: 24,),
               TextField(
@@ -94,6 +96,7 @@ class _OngkirPageState extends State<OngkirPage> {
               SizedBox(height: 24,),
               ElevatedButton(
                 onPressed: () async{
+                  if(_beratController.text.isEmpty || _asalKotaController.text.isEmpty || _tujuanController.text.isEmpty) return;
                   daftarLayanan = await GetLayananList(
                     idAsal: getIdKota(_asalKotaController.text),
                     idTujuan: getIdKota(_tujuanController.text),

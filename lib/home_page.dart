@@ -47,7 +47,10 @@ class HomePage extends StatelessWidget {
                 SizedBox(height: 20,),
                 ElevatedButton(
                   onPressed: (){Get.toNamed('/ongkir');},
-                  child: Text("Cek Ongkir")),     
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text("Mari bertukar barang\n(Tugas API)",textAlign: TextAlign.center,),
+                  )),     
             ],
           ),
         ),
