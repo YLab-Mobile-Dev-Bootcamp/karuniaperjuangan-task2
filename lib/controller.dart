@@ -9,3 +9,4 @@ class StateController extends GetxController{
   var name = "Pengunjung".obs;
   changeName(String newName) => name.value = newName;
 }
+

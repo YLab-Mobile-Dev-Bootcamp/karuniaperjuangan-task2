@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:ylabs_task2/home_page.dart';
+import 'package:ylabs_task2/ongkir_page.dart';
 
 import 'cv_page.dart';
 
@@ -34,6 +35,7 @@ class MyApp extends StatelessWidget {
       getPages: [
         GetPage(name: '/', page: () => HomePage()),
         GetPage(name: '/cv', page: () => CVJuangPage()),
+        GetPage(name: '/ongkir', page: () => OngkirPage()),
       ],
       home: HomePage(),
     );

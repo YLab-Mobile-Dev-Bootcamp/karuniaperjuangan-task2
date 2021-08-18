@@ -43,7 +43,11 @@ class HomePage extends StatelessWidget {
                 SizedBox(height: 20,),
                 ElevatedButton(
                   onPressed: (){Get.toNamed('/cv');},
-                  child: Text("Mari Berkenalan"))    
+                  child: Text("Mari Berkenalan")),
+                SizedBox(height: 20,),
+                ElevatedButton(
+                  onPressed: (){Get.toNamed('/ongkir');},
+                  child: Text("Cek Ongkir")),     
             ],
           ),
         ),
