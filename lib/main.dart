@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:ylabs_task2/home_page.dart';
 import 'package:ylabs_task2/ongkir_page.dart';
@@ -17,7 +18,10 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
+    return ScreenUtilInit(
+      designSize: Size(360, 640),
+      
+      builder: () => GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'CV Juang',
       theme: ThemeData(
@@ -38,7 +42,10 @@ class MyApp extends StatelessWidget {
         GetPage(name: '/ongkir', page: () => OngkirPage()),
       ],
       home: HomePage(),
-    );
+    ));
+    
+    
+    
   }
 }
 
